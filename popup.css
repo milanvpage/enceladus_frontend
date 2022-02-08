@@ -1,0 +1,261 @@
+body {
+  background:transparent;
+	height: 1000px;
+	width: 350px;
+    background-color: rgb(197, 235, 241);
+    font-family: "Raleway", sans-serif;
+}
+
+/* Style button element */
+button {
+    border: none;
+    padding: 12px 24px;
+    border-radius: 50px;
+
+    font-weight: 600;
+    color: #1c1ea3;
+    background-color: #e0efff;
+
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 2rem;
+
+    /* Button is a clickable element, therefore it should have a pointer cursor */
+    cursor: pointer;
+}
+
+/* button {
+	height: 100px;
+	width: 250px;
+	outline: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+	margin-top: 15px;
+	border: none;
+	border-radius: 2px;
+} */
+
+/* When the button is focused or hovered, it's good have some indication for usability. You can do so by switching the text and background colors of the button: */
+
+/* Add style when the button is focused or hovered */
+button:focus,
+button:hover {
+    background-color: #1900ff;
+    color: #e0efff;
+}
+
+#CSV-form-cont {
+    margin: auto;
+    margin-bottom: 2rem;
+    width: 60%;
+    border: 5px solid #FFFF;
+    padding: 10px;
+    background-color: lightgrey;
+    border-radius: 12px;
+    box-shadow: 3px 4px #2196F3;
+}
+
+/* .card {
+    text-align: center;
+    border: grey solid 1px;
+    padding: 1rem;
+    width: 15rem;
+    height: 25rem;
+    display: inline-grid;
+    margin: 1rem 2rem;
+    box-shadow: 3px 4px #e04b52
+  } */
+
+  /* The switch - the box around the slider */
+.switch {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+  .toggle  {
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+
+  }
+
+  #CSV-title {
+    text-align: center;
+  }
+
+  #email-text-toggle {
+    text-align: center;
+    /* display: inline-block;
+    vertical-align: middle;
+    width: 40px; */
+    
+  }
+
+  #form-cont {
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+
+}
+
+  /* #text {
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+
+} */
+
+#subject {
+    margin: auto;
+    margin-bottom: 2rem;
+    width: 60%;
+    border: 5px solid #FFFF;
+    padding: 10px;
+    background-color: whitesmoke;
+    border-radius: 12px;
+    box-shadow: 3px 4px #2196F3;
+    text-align: center;
+}
+
+#message {
+    margin: auto;
+    margin-bottom: 2rem;
+    width: 60%;
+    border: 5px solid #FFFF;
+    padding: 10px;
+    background-color: whitesmoke;
+    border-radius: 12px;
+    box-shadow: 3px 4px #2196F3;
+    text-align: center;
+}
+
+/* #exit-btn {
+    float: left;
+} */
+
+.btns {
+    text-align: center;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.drop-zone {
+    margin: auto;
+    text-align: center;
+    max-width: 150px;
+    height: 150px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
+    color: #cccccc;
+    border: 4px dashed grey;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+}
+
+.drop-zone--over {
+    border-style: solid;
+    align-items: center;
+
+}
+
+.drop-zone__input {
+    text-align: center;
+    display: none;
+    align-items: center;
+
+}
+
+.drop-zone__thumb {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #cccccc;
+    background-size: cover;
+    position: relative;
+    align-items: center;
+}
+
+.drop-zone__thumb::after {
+    content: attr(data-label);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 0;
+    color: white;
+    background: rgba(0, 0, 0, 0.75);
+    font-size: 14px;
+
+}
+
+
+

@@ -1,0 +1,41 @@
+{
+    "name": "Enceladus",
+    "description": "Copy paste CSV file and Send mass text",
+    "version": "1.0",
+    "author": "Milan Page",
+    "manifest_version": 3,
+    "options_page": "options.html",
+    "background": {
+        "service_worker": "background.js"
+    },
+    "permissions": ["storage", "activeTab", "scripting"],
+    "action": {
+        "default_popup": "popup.html",
+        "default_css": "popup.css",
+        "default_title": "Enceladus",
+        "default_icon": {
+            "16": "/images/default_icons/get_started16.png",
+            "32": "/images/default_icons/get_started32.png",
+            "48": "/images/default_icons/get_started48.png",
+            "128": "/images/default_icons/get_started128.png"
+        }
+    },
+    "commands": {
+        "_execute_action": {
+            "suggested_key": {
+                "default": "Ctrl+Shift+E",
+                "mac": "MacCtrl+Shift+E"
+            }
+        }
+    },
+    "icons": {
+        "16":"icons/Black_Icons/Icon_black_16.png",
+        "24":"icons/Black_Icons/Icon_black_24.png",
+        "32": "icons/Black_Icons/Icon_black_32.png",
+        "48": "icons/Black_Icons/Icon_black_48.png",
+        "128": "icons/Black_Icons/Icon_black_128.png"
+        
+    }
+
+    
+} 
